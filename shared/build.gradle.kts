@@ -7,6 +7,12 @@ kotlin {
     jvm()
     js {
         browser()
+        compilations.all {
+            kotlinOptions {
+                // Limitation of JS compiler IR backend in 1.4-M1
+                sourceMap = false
+            }
+        }
     }
 
     targets.all {
