@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Handlebar Adventures</string>
+    <string name="grant_location_permissions">Start</string>
+    <string name="physicalActivityText">Physical Activity</string>
+</resources>
