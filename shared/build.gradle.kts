@@ -38,7 +38,6 @@ kotlin {
             }
         }
 
-        @Suppress("UNUSED_VARIABLE")
         val jvmMain by getting {
             dependencies {
                 api(kotlin("stdlib-jdk8"))

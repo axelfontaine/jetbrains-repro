@@ -127,3 +127,10 @@ Execution failed for task ':shared:compileKotlinJs'.
 ```
 
 This does NOT happen when using the legacy JS compiler.
+
+# [KT-38871](https://youtrack.jetbrains.com/issue/KT-38871)
+
+1. In IntelliJ open `shared/build.gradle.kts` and go to `val jvmMain by getting {`
+2. IntelliJ shows a `Variable 'jvmMain' is never used` warning
+
+This should NOT happen as this is a valid sourceSet and this is the idiomatic way to refer to it in a `build.gradle.kts` file. 
