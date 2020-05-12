@@ -12,6 +12,14 @@ Repro repo for various issues with Jetbrains' products (IntelliJ, Kotlin, Ktor, 
 
 - Import project in IntelliJ
 
+# [IDEA-240612](https://youtrack.jetbrains.com/issue/IDEA-240612)
+
+1. Go to the Gradle tool window and execute `jetbrains-repro/server/Tasks/application/run`
+2. Run the `Android` run configuration
+3. The Android application never launches as IntelliJ waits for `jetbrains-repro:server [run]` to finish.
+
+This does NOT happen when inverting the order of steps 1 and 2 as the Android app Gradle rebuild can fully complete before the server is launched with Gradle.
+
 # [KT-38651](https://youtrack.jetbrains.com/issue/KT-38651)
 
 1. Navigate to `server/src/main/kotlin/main.kt`
