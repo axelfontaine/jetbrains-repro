@@ -24,11 +24,11 @@ This does NOT happen when you debug `jetbrains-repro/server/Tasks/application/ru
 
 # [IDEA-240612](https://youtrack.jetbrains.com/issue/IDEA-240612)
 
-1. Go to the Gradle tool window and execute `jetbrains-repro/server/Tasks/application/run`
-2. Run the `Android` run configuration
-3. The Android application never launches as IntelliJ waits for `jetbrains-repro:server [run]` to finish.
+1. Run the `Server` run configuration and wait for it to start
+2. Run the `Server` run configuration again
+3. The second server never launches as IntelliJ waits for the first one to finish.
 
-This does NOT happen when inverting the order of steps 1 and 2 as the Android app Gradle rebuild can fully complete before the server is launched with Gradle.
+![IDEA-240612 screenshot](IDEA-240612.png)
 
 # [KT-38651](https://youtrack.jetbrains.com/issue/KT-38651)
 
