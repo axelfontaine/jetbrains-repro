@@ -1,6 +1,13 @@
 # jetbrains-repro
 Repro repo for various issues with Jetbrains' products (IntelliJ, Kotlin, Ktor, ...)
 
+# Environment Tested
+
+- Windows 10 x64 1909
+- AdoptOpenJDK JDK 14.0.1
+- Gradle 6.4
+- IntelliJ 2020.1.1 with Kotlin EAP plugin
+
 # General Setup
 
 - Import project in IntelliJ
