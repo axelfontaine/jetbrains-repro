@@ -107,3 +107,5 @@ e: java.lang.IllegalStateException: Serializable class must have single primary 
 Execution failed for task ':shared:compileKotlinJs'.
 > Internal compiler error. See log for more details
 ```
+
+This does NOT happen when using the legacy JS compiler.
