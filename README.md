@@ -5,7 +5,7 @@ Repro repo for various issues with Jetbrains' products (IntelliJ, Kotlin, Ktor, 
 
 1. Import project in IntelliJ
 2. Navigate to `server/src/main/kotlin/main.kt`
-3. Click the <span style="color: green">▶</span> next to `fun main() {`
+3. Click the <span style="color: green">⯈</span> next to `fun main() {`
 
 You will now see the following error in the Run tool window for `MainKt`:
 
