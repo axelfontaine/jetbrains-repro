@@ -12,6 +12,14 @@ Repro repo for various issues with Jetbrains' products (IntelliJ, Kotlin, Ktor, 
 
 - Import project in IntelliJ
 
+# [IDEA-239654](https://youtrack.jetbrains.com/issue/IDEA-239654)
+
+1. Go to the Gradle tool window and run `jetbrains-repro/server/Tasks/application/run`
+2. Go to the Run tool window and click ■ to kill `jetbrains-repro:server [run]`
+3. The button is now disabled, but the process is never killed and `java.exe` must be manually terminated in Task Manager
+
+This does NOT happen when you debug `jetbrains-repro/server/Tasks/application/run` instead of running it, as in that case the kill completes normally.
+
 # [IDEA-240612](https://youtrack.jetbrains.com/issue/IDEA-240612)
 
 1. Go to the Gradle tool window and execute `jetbrains-repro/server/Tasks/application/run`
